@@ -61,7 +61,7 @@ public class StudentRepository {
         if(pairMap.containsKey(teacher)){
             students = pairMap.get(teacher);
             for(String studentC : students){
-                if(pairMap.containsKey(studentC)) pairMap.remove(studentC);
+                if(studentMap.containsKey(studentC)) studentMap.remove(studentC);
             }
             pairMap.remove(teacher);
         }
