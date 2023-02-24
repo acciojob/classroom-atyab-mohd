@@ -52,7 +52,7 @@ public class StudentRepository {
     }
 
     public List<String> getAllStudents() {
-        return new ArrayList<>(pairMap.keySet());
+        return new ArrayList<>(studentMap.keySet());
 
     }
 
